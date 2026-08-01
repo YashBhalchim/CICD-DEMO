@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  employee-service:
+    build: .
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SERVER_PORT: 8081
